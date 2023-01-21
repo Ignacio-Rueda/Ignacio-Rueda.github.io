@@ -1,36 +1,47 @@
 *{
-    margin:0;
-    padding:0;
+    margin:0px;
+    padding:0px;
     box-sizing: border-box;
 }
-#Lenguajes{
-    display:none;
+
+
+/****************CONTAINER***************************************************************************************************/
+#container{
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    width: 100%;
+    justify-content: center;
+    align-items:flex-start;
+    overflow:scroll;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    border: 1px solid black;
 }
-#TiempoLibre{
-    display:none;
+.descripcion {
+    width: 80vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: skyblue;
+    border:2px solid black;
+    font-size:calc(1em + 1vw);
+    margin-top: 2em;
 }
-#Contacto{
-    display:none;
+.videos{
+    width: 80vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: skyblue;
+    margin-top: 2em;
+    border:2px solid black;
+    font-size:calc(1em + 1vw);
 }
-
-
-
-
-body{
-   background-color: black;
-    max-width: 1000px;
-    min-width: 320px;/*Télefonos*/
-    height: calc(100vh - 2rem);
-    overflow: hidden;
+.videos video{
+    width: 100%;
+    height: 100%;
 }
-/****************INICIO***************************************************************************************************/
-#inicio{
-    height: calc(100vh - 2rem);
-    border:2px solid white;
-
-}
-
-
 /*#presentacion{
     display: flex;
     flex-direction: row;
@@ -44,7 +55,6 @@ body{
     margin: auto;
     overflow: hidden;
     background-color: red;
-
 }*/
 
 /*#presentacion #descripcion{
@@ -88,36 +98,3 @@ body{
     margin: auto;
     color:white;
 }*/
-/*****FOOTER************************************************************************************************************/
-footer{
-    background-color: black;
-    height: 2rem;
-    width: 100vw;
-    border: 1px solid red;
-    max-width: 1000px;
-    min-width: 320px;/*Télefonos*/
-}
-nav{
-    margin:auto;
-    border:1px solid green;
-    width: 100vw;
-    max-width: 1000px;
-    min-width: 320px;/*Télefonos*/
-
-}
-nav ul{
-    border:1px solid yellow;
-
-}
-nav ul li{
-    display:inline-block;
-    margin-left: 1em;
-    font-size:calc(0.5em + 1vw);
-}
-nav ul li a{
-    text-decoration: none;
-    color:white;
-}
-#skill {
-    color:white;
-}
