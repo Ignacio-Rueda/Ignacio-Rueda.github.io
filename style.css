@@ -19,22 +19,28 @@
 body{
     background-size: 100% 100%;
     min-height: calc(100vh - 4rem);
+    max-width: 1000px;
+    min-width: 320px;/*Télefonos*/
+    min-height: calc(100vh - 4rem);
 }
-/****************INICIO***************************************************************************************************/
+/****************INICIO***************************************************************************************************
 #inicio{
     background-image: url(fondo.jpg);
     background-size: 100% 100%;
     min-height: calc(100vh - 4rem);
+    max-width: 1000px;
+    min-width: 320px;/*Télefonos
+    min-height: calc(100vh - 4rem); 
 }
 /*---------------PRESENTACIÓN-------------------------------------------------------------------------------------------*/
-#presentacion{
+/*#presentacion{
     display: flex;
     flex-direction: row;
     align-items: center;
     border:3px solid rgb(72,219,180);
     width: 800vw;
     max-width: 1000px;
-    min-width: 320px;/*Télefonos*/
+    min-width: 320px;/*Télefonos
     min-height: calc(100vh - 4rem);
     margin: auto;
     overflow: hidden;
@@ -51,7 +57,7 @@ body{
     border:1px solid red;
     overflow: auto;
 }
-/*---------------VIDEO_1-------------------------------------------------------------------------------------------*/
+/*---------------VIDEO_1-------------------------------------------------------------------------------------------
 #arduino{
     display: flex;
     flex-direction: column;
@@ -59,7 +65,7 @@ body{
     border:3px solid rgb(72,219,180);
     width: 40vw;
     max-width: 1000px;
-    min-width: 320px;/*Télefonos*/
+    min-width: 320px;/*Télefonos
     margin: auto;
     min-height: calc(100% - 4rem);
     margin-top: 2%;
@@ -82,7 +88,7 @@ body{
     text-align: center;
     margin: auto;
     color:white;
-}
+}*/
 /*****FOOTER************************************************************************************************************/
 footer{
     background-color: black;
