@@ -3,7 +3,9 @@
     padding:0px;
     box-sizing: border-box;
 }
-
+body{
+    background-color: black;
+}
 
 /****************CONTAINER***************************************************************************************************/
 #container{
@@ -17,6 +19,7 @@
     margin-top: 5em;
     margin-bottom: 5em;
     border: 1px solid black;
+    background-color: black;
 }
 .descripcion {
     width: 80vw;
@@ -27,6 +30,8 @@
     border:2px solid black;
     font-size:calc(1em + 1vw);
     margin-top: 2em;
+    background-color: black;
+    color: white;
 }
 .videos{
     width: 80vw;
