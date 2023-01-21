@@ -1,0 +1,114 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+#Lenguajes{
+    display:none;
+}
+#TiempoLibre{
+    display:none;
+}
+#Contacto{
+    display:none;
+}
+
+
+
+
+body{
+    
+}
+/****************INICIO***************************************************************************************************/
+#inicio{
+    background-image: url(fondo.jpg);
+    background-size: 100% 100%;
+    min-height: calc(100vh - 4rem);
+}
+/*---------------PRESENTACIÓN-------------------------------------------------------------------------------------------*/
+#presentacion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border:3px solid rgb(72,219,180);
+    width: 800vw;
+    max-width: 1000px;
+    min-width: 320px;/*Télefonos*/
+    min-height: calc(100vh - 4rem);
+    margin: auto;
+    overflow: hidden;
+
+   
+}
+
+#presentacion #descripcion{
+    width: 100%;
+    height: auto;
+    font-size:calc(1em + 1vw);
+    text-align: center;
+    color:white;
+    border:1px solid red;
+    overflow: auto;
+}
+/*---------------VIDEO_1-------------------------------------------------------------------------------------------*/
+#arduino{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:3px solid rgb(72,219,180);
+    width: 40vw;
+    max-width: 1000px;
+    min-width: 320px;/*Télefonos*/
+    margin: auto;
+    min-height: calc(100% - 4rem);
+    margin-top: 2%;
+    overflow: hidden;
+   
+}
+#arduino #calculator {
+    margin-bottom: auto;
+    margin-top: auto;
+    width: 100%;
+}
+#arduino #calculator video{
+    width: 100%;
+    height: 100%;
+}
+#arduino #descripcion{
+    width: 100%;
+    height: auto;
+    font-size:calc(1em + 1vw);
+    text-align: center;
+    margin: auto;
+    color:white;
+}
+/*****FOOTER************************************************************************************************************/
+footer{
+    background-color: black;
+    height: 4rem;
+    width: 100vw;
+    border: 1px solid red;
+}
+nav{
+    margin:auto;
+    border:1px solid green;
+    width: 40vw;
+    max-width: 1000px;
+    min-width: 320px;/*Télefonos*/
+}
+nav ul{
+    border:1px solid yellow;
+    margin: auto;
+}
+nav ul li{
+    display:inline-block;
+    margin-left: 1em;
+    font-size:calc(0.5em + 1vw);
+}
+nav ul li a{
+    text-decoration: none;
+    color:white;
+}
+#skill {
+    color:white;
+}
