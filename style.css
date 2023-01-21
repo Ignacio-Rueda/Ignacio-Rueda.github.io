@@ -21,6 +21,26 @@ body{
     border: 1px solid black;
     background-color: black;
 }
+.descripcion ul{
+    margin-left: 0.5em;
+    list-style: none;
+    width: 14em;
+    margin: auto;
+    
+}
+.descripcion li{
+   display: inline-block;
+   padding-left: 1em;
+   margin-left: auto;
+   margin-right: auto;
+}
+.descripcion ul img{
+    height: 2em;
+    width: 2em;
+}
+.descripcion p{
+    text-align: center;
+}
 .descripcion {
     width: 80vw;
     height: auto;
