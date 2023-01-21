@@ -17,22 +17,21 @@
 
 
 body{
-    background-size: 100% 100%;
-    min-height: calc(100vh - 4rem);
-    max-width: 1000px;
-    min-width: 320px;/*Télefonos*/
-    min-height: calc(100vh - 4rem);
-}
-/****************INICIO***************************************************************************************************
-#inicio{
     background-image: url(fondo.jpg);
     background-size: 100% 100%;
-    min-height: calc(100vh - 4rem);
+    background-repeat: no-repeat;
     max-width: 1000px;
-    min-width: 320px;/*Télefonos
-    min-height: calc(100vh - 4rem); 
+    min-width: 320px;/*Télefonos*/
+    height: calc(100vh);
 }
-/*---------------PRESENTACIÓN-------------------------------------------------------------------------------------------*/
+/****************INICIO***************************************************************************************************/
+#inicio{
+    height: calc(100vh - 8rem);
+    border:2px solid white;
+
+}
+
+
 /*#presentacion{
     display: flex;
     flex-direction: row;
@@ -40,15 +39,16 @@ body{
     border:3px solid rgb(72,219,180);
     width: 800vw;
     max-width: 1000px;
-    min-width: 320px;/*Télefonos
-    min-height: calc(100vh - 4rem);
+    min-width: 320px;/*Télefonos*
+    height: calc(100vh - 4rem);
+    max-height: fit-content;
     margin: auto;
     overflow: hidden;
+    background-color: red;
 
-   
-}
+}*/
 
-#presentacion #descripcion{
+/*#presentacion #descripcion{
     width: 100%;
     height: auto;
     font-size:calc(1em + 1vw);
@@ -114,7 +114,7 @@ nav ul li{
 }
 nav ul li a{
     text-decoration: none;
-    color:red;
+    color:white;
 }
 #skill {
     color:white;
