@@ -6,10 +6,10 @@
 body{
     background-color: black;
 }
-#video-c{
+#video-a,#video-b,#video-c{
     display: none;
 }
-#video-c{
+#video-a,#video-b,#video-c{
     width: 80vw;
     height: auto;
     margin-left: auto;
@@ -17,7 +17,18 @@ body{
     margin-top: 2em;
     font-size:calc(1em + 1vw);
 }
-#video-c video{
+#video-a img,#video-b img,#video-c img{
+    width: 2em;
+    height: 2em;
+}
+#video-a figure,#video-b figure,#video-c figure{
+    width: 2em;
+    height: 2em;
+    margin:auto;
+    margin-bottom: 1em;
+}
+
+#video-a video,#video-b video,#video-c video{
     width: 100%;
     height: 100%;
 }
@@ -29,6 +40,7 @@ body{
     width: 2em;
     height: 2em;
     margin: auto;
+    margin-top: 2em;
 }
 /****************CONTAINER***************************************************************************************************/
 #container{
@@ -38,10 +50,9 @@ body{
     width: 100%;
     justify-content: center;
     align-items:flex-start;
-    overflow:scroll;
+    overflow:hidden;/*Estaba en scroll pero se quedaba feote*/
     margin-top: 5em;
     margin-bottom: 5em;
-    border: 1px solid black;
     background-color: black;
 }
 .descripcion ul{
@@ -74,19 +85,6 @@ body{
     margin-top: 2em;
     background-color: black;
     color: white;
-}
-.videos{
-    width: 80vw;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2em;
-    border:2px solid black;
-    font-size:calc(1em + 1vw);
-}
-.videos video{
-    width: 100%;
-    height: 100%;
 }
 /*#presentacion{
     display: flex;

@@ -14,7 +14,7 @@
             <ul>
                 <li>
                     <figure>
-                        <img id="hide-me"src="/logoArduino.png" alt="logo_arduino">
+                        <img src="/logoArduino.png" alt="logo_arduino">
                     </figure>
                 </li>
                 <li>
@@ -35,38 +35,61 @@
             </ul>
             <p>Si te animas, échale un vistazo a algunos de mis proyectos!</p>
         </div>
+/<!---------------------------------------------------VIDEO  A------------------------------------------------->
         <div class="descripcion">
-            <p>ARDUINO: CALCULADORA - SENSOR DE TEMPERATURA</p>
+            <p>Pantalla conectada a placa de arduino simulando una calculadora.</p>
+            <figure>
+                <a href="#" onclick="return ShowContent('video-a');"><img src="./show.png" alt="show"></a>
+            </figure>
+        </div>
+        <div id="video-a">
+            <figure>
+                <a href="#" onclick="return HideContent('video-a');"><img src="./hidden.png" alt="show"></a>
+            </figure>
+            <video controls muted>
+                <source src="/calculator.mp4" type="video/mp4">
+            </video>
+        </div>
+/<!---------------------------------------------------VIDEO  B------------------------------------------------->
+        <div class="descripcion">
+            <p>Brazo robot conectado a placa de arduino y varios servomotores</p>
+            <figure>
+                <a href="#" onclick="return ShowContent('video-b');"><img src="./show.png" alt="show"></a>
+            </figure>
+        </div>
+        <div id="video-b">
+            <figure>
+                <a href="#" onclick="return HideContent('video-b');"><img src="./hidden.png" alt="show"></a>
+            </figure>
+            <video controls muted>
+                <source src="/brazo-robot.mp4" type="video/mp4">
+            </video>
+        </div>
+/<!---------------------------------------------------VIDEO  C------------------------------------------------->
+        <div class="descripcion">
+            <p>Simulación de semáforo con señal acústica para peatones</p>
             <figure>
                 <a href="#" onclick="return ShowContent('video-c');"><img src="./show.png" alt="show"></a>
             </figure>
         </div>
         <div id="video-c">
-            <video controls autoplay muted>
+            <figure>
+                <a href="#" onclick="return HideContent('video-c');"><img src="./hidden.png" alt="show"></a>
+            </figure>
+            <video controls muted>
                 <source src="/calculator.mp4" type="video/mp4">
             </video>
         </div>
-        <div class="descripcion">
-            <p>ARDUINO: BRAZO ROBOT</p>
-        </div>
-        <div class="videos">
-            <video controls muted>
-                <source src="/brazo-robot.mp4" type="video/mp4">
-            </video>
-        </div>
-        <div class="descripcion">
-            <p>ARDUINO: SEMÁFORO SEÑAL ACÚSTICA</p>
-        </div>
-        <div class="videos">
-            <video controls muted>
-                <source src="/SEMÁFORO - SEÑAL ACÚSTICA.mp4" type="video/mp4">
-            </video>
-        </div>
+
+
     </div>
     <script type="text/javascript">
         function ShowContent(content) {
-            document.getElementById("video-c").style.display = 'none';/*style.display = 'none' supone ocultar todo el elemento*/
             document.getElementById(content).style.display = 'block';
+        }
+
+        function HideContent(content) {
+            document.getElementById(content).style.display = 'none';
         }
     </script>
 </body>
