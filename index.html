@@ -9,8 +9,17 @@
 </head>
 <body>
     <div id="container">
-        <div class="descripcion">
-            <p>Hola! Mi nombre es Ignacio, he trabajado con estos lenguajes:</p>
+        <div id="presentacion">
+            <div id="avatar">
+                <figure>
+                    <img src="/avatarNacho.png" alt="avatar">
+                </figure>
+            </div>
+            <div id="quienSoy">
+                <p>Hola! Mi nombres es Ignacio, he trabajado con estos lenguajes</p>
+            </div>
+        </div>
+        <div class="descripcion">    
             <ul>
                 <li>
                     <figure>
@@ -35,7 +44,7 @@
             </ul>
             <p>Si te animas, échale un vistazo a algunos de mis proyectos!</p>
         </div>
-/<!---------------------------------------------------VIDEO  A------------------------------------------------->
+<!---------------------------------------------------VIDEO  A------------------------------------------------->
         <div class="descripcion">
             <p>Pantalla conectada a placa de arduino simulando una calculadora.</p>
             <figure>
@@ -50,7 +59,7 @@
                 <source src="/calculator.mp4" type="video/mp4">
             </video>
         </div>
-/<!---------------------------------------------------VIDEO  B------------------------------------------------->
+<!---------------------------------------------------VIDEO  B------------------------------------------------->
         <div class="descripcion">
             <p>Brazo robot conectado a placa de arduino y varios servomotores</p>
             <figure>
@@ -65,7 +74,7 @@
                 <source src="/brazo-robot.mp4" type="video/mp4">
             </video>
         </div>
-/<!---------------------------------------------------VIDEO  C------------------------------------------------->
+<!---------------------------------------------------VIDEO  C------------------------------------------------->
         <div class="descripcion">
             <p>Simulación de semáforo con señal acústica para peatones</p>
             <figure>
@@ -80,9 +89,28 @@
                 <source src="/calculator.mp4" type="video/mp4">
             </video>
         </div>
+<!---------------------------------------------------GALERÍA IMÁGENES------------------------------------------------->        
+        <div class="descripcion">
+            <p>Programa contabilidad hogar</p>
+        </div>
+        <div id="galeria-d">
+            <figure>
+                <img src="/ingresos.png" alt="ingresos">
+                <figcaption>Imagen_1</figcaption>
+            </figure>
 
+            <figure>
+                <img src="/gastos.png" alt="gastos">
+                <figcaption>Imagen_2</figcaption>
+            </figure>
 
-    </div>
+            <figure>
+                <img src="/pasoAtelegram.png" alt="paso a telegram">
+                <figcaption>Imagen_3</figcaption>
+            </figure>
+        </div>
+
+</div>
     <script type="text/javascript">
         function ShowContent(content) {
             document.getElementById(content).style.display = 'block';

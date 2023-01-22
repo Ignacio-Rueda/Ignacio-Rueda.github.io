@@ -6,10 +6,88 @@
 body{
     background-color: black;
 }
-#video-a,#video-b,#video-c{
-    display: none;
+
+/****************CONTAINER***************************************************************************************************/
+#container{
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    width: 100%;
+    justify-content: center;
+    align-items:flex-start;
+    overflow:hidden;/*Estaba en scroll pero se quedaba feote*/
+    margin-top: 5em;
+    margin-bottom: 5em;
+    background-color: black;
+}
+#presentacion {
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    justify-content: center;
+}
+#presentacion #avatar{
+    width: 15%;
+    height: 20vw;
+    background-color: black;
+}
+#presentacion #avatar figure{
+    height: 100%;
+    width: 100%;
+}
+#presentacion #avatar figure img{
+    height: 100%;
+    width: 100%;
+}
+#presentacion #quienSoy{
+    display: flex;
+    margin-left: 2%;
+    width: 80%;
+    height: 20vw;
+    background-color:black;
+    font-size:calc(1em + 1vw);
+    color:white;
+    text-align: center;
+    align-items: center;
+}
+
+.descripcion ul{
+    margin-left: 0.5em;
+    list-style: none;
+    width: 14em;
+    margin: auto;
+    
+}
+.descripcion li{
+   display: inline-block;
+   padding-left: 1em;
+   margin-left: auto;
+   margin-right: auto;
+}
+.descripcion img{
+    height: 2em;
+    width: 2em;
+}
+.descripcion p{
+    text-align: center;
+}
+.descripcion {
+    width: 80vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border:2px solid black;
+    font-size:calc(1em + 1vw);
+    margin-top: 2em;
+    background-color: black;
+    color: white;
 }
 #video-a,#video-b,#video-c{
+    display: none;
     width: 80vw;
     height: auto;
     margin-left: auto;
@@ -42,49 +120,28 @@ body{
     margin: auto;
     margin-top: 2em;
 }
-/****************CONTAINER***************************************************************************************************/
-#container{
+#galeria-d{
     display: flex;
-    flex-direction: column;
-    height:100%;
-    width: 100%;
-    justify-content: center;
-    align-items:flex-start;
-    overflow:hidden;/*Estaba en scroll pero se quedaba feote*/
-    margin-top: 5em;
-    margin-bottom: 5em;
-    background-color: black;
-}
-.descripcion ul{
-    margin-left: 0.5em;
-    list-style: none;
-    width: 14em;
-    margin: auto;
-    
-}
-.descripcion li{
-   display: inline-block;
-   padding-left: 1em;
-   margin-left: auto;
-   margin-right: auto;
-}
-.descripcion img{
-    height: 2em;
-    width: 2em;
-}
-.descripcion p{
-    text-align: center;
-}
-.descripcion {
+    flex-direction: row;
     width: 80vw;
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    border:2px solid black;
-    font-size:calc(1em + 1vw);
     margin-top: 2em;
-    background-color: black;
-    color: white;
+    background-color: black; 
+    justify-content: center;
+}
+#galeria-d figure{
+    width: 25vw;
+    height: 20vw;
+    border:1px solid black;
+    margin-left: 0.5em;
+}
+#galeria-d figure img{
+    width: 100%;
+    height: 100%;
+    border:1px solid black;
+    margin-left: 0.5em;
 }
 /*#presentacion{
     display: flex;
