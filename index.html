@@ -14,7 +14,7 @@
             <ul>
                 <li>
                     <figure>
-                        <img src="/logoArduino.png" alt="logo_arduino">
+                        <img id="hide-me"src="/logoArduino.png" alt="logo_arduino">
                     </figure>
                 </li>
                 <li>
@@ -37,9 +37,12 @@
         </div>
         <div class="descripcion">
             <p>ARDUINO: CALCULADORA - SENSOR DE TEMPERATURA</p>
+            <figure>
+                <a href="#" onclick="return ShowContent('video-c');"><img src="./show.png" alt="show"></a>
+            </figure>
         </div>
-        <div class="videos">
-            <video controls muted>
+        <div id="video-c">
+            <video controls autoplay muted>
                 <source src="/calculator.mp4" type="video/mp4">
             </video>
         </div>
@@ -60,7 +63,12 @@
             </video>
         </div>
     </div>
-
+    <script type="text/javascript">
+        function ShowContent(content) {
+            document.getElementById("video-c").style.display = 'none';/*style.display = 'none' supone ocultar todo el elemento*/
+            document.getElementById(content).style.display = 'block';
+        }
+    </script>
 </body>
  
 

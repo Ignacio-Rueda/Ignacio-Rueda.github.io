@@ -6,7 +6,30 @@
 body{
     background-color: black;
 }
-
+#video-c{
+    display: none;
+}
+#video-c{
+    width: 80vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    font-size:calc(1em + 1vw);
+}
+#video-c video{
+    width: 100%;
+    height: 100%;
+}
+.descripcion img{
+    width: 2em;
+    height: 2em;
+}
+.descripcion figure{
+    width: 2em;
+    height: 2em;
+    margin: auto;
+}
 /****************CONTAINER***************************************************************************************************/
 #container{
     display: flex;
@@ -34,7 +57,7 @@ body{
    margin-left: auto;
    margin-right: auto;
 }
-.descripcion ul img{
+.descripcion img{
     height: 2em;
     width: 2em;
 }
