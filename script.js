@@ -49,9 +49,9 @@ var CANALETA_40x60 = 	7.14;
 
 function calcular() {
     // Obtener los valores de los campos de entrada
-    var nombre_cliente = document.getElementById("nombre_cliente").value;
-    var direccion = document.getElementById("direccion").value;
-    var tfno = document.getElementById("tfno").value;
+    nombre_cliente = document.getElementById("nombre_cliente").value;
+    direccion = document.getElementById("direccion").value;
+    tfno = document.getElementById("tfno").value;
     var entry_tapas = parseFloat(document.getElementById("tapas").value);
     var entry_fig_canal = parseFloat(document.getElementById("fig_canal").value);
     var entry_m_bajante = parseFloat(document.getElementById("m_bajante").value);
@@ -66,7 +66,7 @@ function calcular() {
     }    
     //CALCULAR LOS COSTES DE CADA CONCEPTO
 
-     var canal_metros_calc = entry_m_canal*BOBINA;
+    canal_metros_calc = entry_m_canal*BOBINA;
         //CALCULO PARA SOPORTE DEPENDIENDO DE LA OPCIÓN SELECCIONADA
      var tipo_soporte = document.getElementById('soporte');
      var soporte_seleccionado = tipo_soporte.value;
@@ -133,5 +133,21 @@ function calcular() {
     document.getElementById("show_tacos_golpe").textContent = tacos_golpe.toFixed(2);
     //COSTE TOTAL
     document.getElementById("resultado").textContent = suma.toFixed(2);
+}
 
+function imprimir(){
+    var doc = new jsPDF();
+    doc.text(20, 20, "Nombre cliente " + nombre_cliente);
+    doc.text(20, 30, "Dirección cliente " + direccion);
+    doc.text(20, 40, "Teléfono " + tfno);
+    doc.text(20, 50, "Metros canal " + canal_metros_calc.toFixed(2)+' €');
+    
+    
+    // Add new page/
+    /*
+    doc.addPage();
+    doc.text(20, 20, 'Visita programacion.net');*/
+    
+    // Save the PDF
+    doc.save('documento.pdf');
 }

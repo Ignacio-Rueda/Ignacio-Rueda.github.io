@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="jspdf.min.js"></script>
+
 </head>
 <body>
     <table>
@@ -109,10 +111,15 @@
                     <p>REMACHES:<span id="show_remaches"></span> €</p>
                     <p>TACOS DE GOLPE:<span id="show_tacos_golpe"></span> €</p>
                     <p>TOTAL COSTE MATERIAL: <span id="resultado"></span> €</p>
+                    <button onclick="imprimir()">DESCARGAR PDF</button>
                 </td>
-            </tr>
+                </tr>  
         </tbody>
     </table>
+             
+             
+    
+  
+
 </body>
 </html>
-	
