@@ -4,6 +4,11 @@
 .resultados .concepto{
     text-align: left;
 }
+.setting{
+    width: 30px;
+    height: 30px;
+    float: right;
+}
 /* Estilo para la tabla */
 table {
     width: 100%; /* Opcional: Haz que la tabla ocupe todo el ancho disponible */
