@@ -89,7 +89,8 @@ function calcular() {
      var tapas_calc = entry_tapas*TAPAS;
      var figuras_canal_calc =entry_fig_canal*INGLETE;
      var bajante_calc = entry_m_bajante*BAJANTE_2x3;
-     var fijacion_canal_calc = (entry_m_bajante/1.5)*FIJACIÓN_DE_CANAL;
+     var fijacion_bajante_calc = (entry_m_bajante/1.5)*FIJACIÓN_DE_BAJANTE_2x3;
+     var fijacion_canal_calc = (entry_m_canal/0.7)*FIJACIÓN_DE_CANAL;
      var figuras_bajante_calc= entry_n_fig_bajante*CODO_3x4;
      var poliuretano_calc=((0.15*entry_tapas)+(0.5*entry_fig_canal)+(0.1*entry_nacimientos))*POLIURETANO;
      var nacimientos_calc = entry_nacimientos*NACIMIENTO_2x3;
@@ -98,7 +99,7 @@ function calcular() {
 
 
     // CALCULAR LA SUMA DEL TOTAL DE CONCEPTOS
-    var suma = canal_metros_calc+soporte_teja_calc+tapas_calc+figuras_canal_calc+bajante_calc+fijacion_canal_calc+figuras_bajante_calc+poliuretano_calc+nacimientos_calc+remaches_calc+tacos_golpe;
+    var suma = canal_metros_calc+soporte_teja_calc+tapas_calc+figuras_canal_calc+bajante_calc+fijacion_bajante_calc+figuras_bajante_calc+poliuretano_calc+nacimientos_calc+remaches_calc+tacos_golpe;
 
       // Mostrar los resultados
     var resultadosElement = document.querySelector(".resultados");
@@ -116,6 +117,7 @@ function calcular() {
     document.getElementById("show_figuras_canal").textContent = figuras_canal_calc.toFixed(2);
     document.getElementById("show_bajante").textContent = bajante_calc.toFixed(2);
     document.getElementById("show_fijacion_canal").textContent = fijacion_canal_calc.toFixed(2);
+    document.getElementById("show_fijacion_bajante").textContent = fijacion_bajante_calc.toFixed(2);
     document.getElementById("show_figuras_bajante").textContent = figuras_bajante_calc.toFixed(2);
     document.getElementById("show_poliuretano").textContent = poliuretano_calc.toFixed(2);
     document.getElementById("show_nacimientos").textContent = nacimientos_calc.toFixed(2);
