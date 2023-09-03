@@ -78,8 +78,8 @@ function calcular() {
      var tacos_golpe=((entry_m_bajante/1.5)*2)*TACO_GOLPE_6x30;
 
 
-      // CALCULAR LA SUMA DEL TOTAL DE CONCEPTOS
-      var suma = canal_metros_calc+soporte_teja_mixto_calc+tapas_calc+figuras_canal_calc+bajante_calc+fijacion_canal_calc+figuras_bajante_calc+poliuretano_calc+nacimientos_calc+remaches_calc+tacos_golpe;
+    // CALCULAR LA SUMA DEL TOTAL DE CONCEPTOS
+    var suma = canal_metros_calc+soporte_teja_mixto_calc+tapas_calc+figuras_canal_calc+bajante_calc+fijacion_canal_calc+figuras_bajante_calc+poliuretano_calc+nacimientos_calc+remaches_calc+tacos_golpe;
 
       // Mostrar los resultados
     var resultadosElement = document.querySelector(".resultados");
