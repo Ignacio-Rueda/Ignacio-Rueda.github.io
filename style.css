@@ -1,0 +1,48 @@
+.resultados {
+    display: none; /* Oculta el elemento inicialmente */
+}
+/* Estilo para la tabla */
+table {
+    width: 100%; /* Opcional: Haz que la tabla ocupe todo el ancho disponible */
+}
+
+/* Estilo para las celdas de la tabla */
+td {
+    padding: 10px; /* Añade espaciado interno para mejorar la apariencia */
+    text-align: center;
+    vertical-align: center;
+}
+/* Estilo para las etiquetas (labels) */
+label {
+    display: block; /* Muestra cada etiqueta en una línea separada */
+    margin-bottom: 5px; /* Añade espacio entre las etiquetas */
+    font-weight: bold; /* Hace que el texto de la etiqueta sea negrita */
+    color: #333; /* Define un color de texto */
+}
+
+/* Estilo para los campos de entrada (inputs) */
+input {
+    width: 100%; /* Haz que los campos de entrada ocupen todo el ancho de la celda */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #ccc; /* Añade un borde con un color de fondo */
+    border-radius: 5px; /* Añade esquinas redondeadas */
+    font-size: 16px; /* Ajusta el tamaño de fuente */
+    margin-bottom: 10px; /* Añade espacio entre los campos de entrada */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave */
+    text-align: center;
+}
+/* Estilo para el botón */
+button {
+    padding: 10px 20px; /* Añade espaciado interno al botón para que tenga un tamaño adecuado */
+    background-color: #007bff; /* Cambia el color de fondo del botón */
+    color: #fff; /* Cambia el color del texto del botón a blanco */
+    border: none; /* Elimina el borde del botón */
+    border-radius: 5px; /* Añade esquinas redondeadas al botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Agrega una transición suave al color de fondo */
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
