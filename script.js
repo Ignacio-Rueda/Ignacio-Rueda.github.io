@@ -49,6 +49,9 @@ var CANALETA_40x60 = 	7.14;
 
 function calcular() {
     // Obtener los valores de los campos de entrada
+    var nombre_cliente = document.getElementById("nombre_cliente").value;
+    var direccion = document.getElementById("direccion").value;
+    var tfno = document.getElementById("tfno").value;
     var entry_tapas = parseFloat(document.getElementById("tapas").value);
     var entry_fig_canal = parseFloat(document.getElementById("fig_canal").value);
     var entry_m_bajante = parseFloat(document.getElementById("m_bajante").value);
@@ -97,7 +100,7 @@ function calcular() {
      var remaches_calc = ((12*entry_fig_canal)+((entry_m_bajante/3)*3))*REMACHES_3_5;
      var tacos_golpe=((entry_m_bajante/1.5)*2)*TACO_GOLPE_6x30;
 
-     console.log(fijacion_canal_calc);
+    
 
 
     // CALCULAR LA SUMA DEL TOTAL DE CONCEPTOS
@@ -111,6 +114,9 @@ function calcular() {
     resultadosElement.scrollIntoView({ block: "end", behavior: "smooth" });
      
    //MOSTRAMOS RESULTADOS  
+    document.getElementById("show_nombre_cliente").textContent = nombre_cliente;
+    document.getElementById("show_direccion").textContent = direccion;
+    document.getElementById("show_tfno").textContent = tfno;
 
     document.getElementById("show_precio_m_canal").textContent = canal_metros_calc.toFixed(2);
     document.getElementById("show_soporte_teja").textContent = soporte_teja_calc.toFixed(2);

@@ -22,14 +22,21 @@
             </tr>
             <tr>
                 <td>
-                    <label for="tapas">NOMBRE CLIENTE</label>
-                    <input id="" type="text">
+                    <label for="nombre_cliente">NOMBRE CLIENTE</label>
+                    <input id="nombre_cliente" type="text">
                 </td>
             </tr>
             <tr>
                 <td>
-                    <label for="tapas">TELÉFONO</label>
-                    <input id="" type="text">
+                    <label for="direccion">DIRECCIÓN</label>
+                    <input id="direccion" type="text">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="tfno">TELÉFONO</label>
+                    <input id="tfno" type="text">
                 </td>
             </tr>
             <tr>
@@ -86,6 +93,9 @@
             <script src="script.js"></script>
             <tr>
                 <td class="resultados">
+                    <p>NOMBRE CLIENTE:<span id="show_nombre_cliente"></span></p>
+                    <p>DIRECCIÓN:<span id="show_direccion"></span></p>
+                    <p>TELÉFONO<span id="show_tfno"></span></p>
                     <p>METROS CANAL:<span id="show_precio_m_canal"></span> €</p>
                     <p><span id="show_type_soporte_teja"></span> <span id="show_soporte_teja"></span> €</p>
                     <p>TAPAS:<span id="show_tapas"></span> €</p>
