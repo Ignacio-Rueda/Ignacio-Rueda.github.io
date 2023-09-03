@@ -1,6 +1,9 @@
 .resultados {
     display: none; /* Oculta el elemento inicialmente */
 }
+.resultados .concepto{
+    text-align: left;
+}
 /* Estilo para la tabla */
 table {
     width: 100%; /* Opcional: Haz que la tabla ocupe todo el ancho disponible */
