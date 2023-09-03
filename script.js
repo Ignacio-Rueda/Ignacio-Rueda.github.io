@@ -19,7 +19,7 @@ var FIJACIÓN_BAJANTE_3x4 = 	0.57;
 var BAJANTE_80 = 	6.4;
 var BAJANTE_100 = 	6.73;
 var CODO_100 = 	7;
-var FIJACIÓN_DE_CANAL =  	0.39;
+var FIJACIÓN_DE_CANAL =  0.39;
 var SOPORTE_DE_TEJA_MIXTO = 0.97;
 var SOPORTE_DE_TEJA_URALITA = 0.99;
 var SOPORTE_ESTRIADO = 0.9;
@@ -96,6 +96,8 @@ function calcular() {
      var nacimientos_calc = entry_nacimientos*NACIMIENTO_2x3;
      var remaches_calc = ((12*entry_fig_canal)+((entry_m_bajante/3)*3))*REMACHES_3_5;
      var tacos_golpe=((entry_m_bajante/1.5)*2)*TACO_GOLPE_6x30;
+
+     console.log(fijacion_canal_calc);
 
 
     // CALCULAR LA SUMA DEL TOTAL DE CONCEPTOS
