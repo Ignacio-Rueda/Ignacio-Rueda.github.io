@@ -105,7 +105,7 @@ function calcular() {
     resultadosElement.style.display = "block"; // Muestra el elemento
 
     // Desplazar la página hacia los resultados
-    resultadosElement.scrollTo({ top: resultadosElement.offsetTop, behavior: 'smooth' });
+    resultadosElement.scrollIntoView({ block: "end", behavior: "smooth" });
      
    //MOSTRAMOS RESULTADOS  
 
