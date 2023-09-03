@@ -17,6 +17,16 @@
             </tr>
             <tr>
                 <td>
+                    <label for="soporte">TIPO DE SOPORTE</label>
+                    <select id="soporte">
+                        <option value="soporte_teja_mixto">SOPORTE TEJA MIXTO</option>
+                        <option value="soporte_teja_uralita">SOPORTE TEJA URALITA</option>
+                        <option value="soporte_estriado">SOPORTE ESTRIADO</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
                     <label for="tapas">NUMERO DE TAPAS</label>
                     <input id="tapas" type="number">
                 </td>
@@ -60,7 +70,7 @@
             <tr>
                 <td class="resultados">
                     <p>PRECIO METROS CANAL:<span id="show_precio_m_canal"></span> €</p>
-                    <p>SOPORTE TEJA MIXTO:<span id="show_soporte_teja_mixta"></span> €</p>
+                    <p><span id="show_type_soporte_teja"></span> <span id="show_soporte_teja"></span> €</p>
                     <p>TAPAS:<span id="show_tapas"></span> €</p>
                     <p>FIGURAS CANAL:<span id="show_figuras_canal"></span> €</p>
                     <p>BAJANTE:<span id="show_bajante"></span> €</p>

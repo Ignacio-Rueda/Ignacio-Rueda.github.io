@@ -1,3 +1,52 @@
+// PRECIOS
+
+var BOBINA = 4.3;
+var TAPAS = 	0.63;
+var BAJANTE_2x3 = 	4.09;
+var CODO	 = 1.83;
+var INGLETE	 = 2.14;
+var FALSO_INGLETE = 	2.34;
+var DESVIACIÓN_FRONTAL_2x3 = 2.69;
+var DESVIACIÓN_LATERAL_2x3 = 3.83;
+var FIJACIÓN_DE_BAJANTE_2x3 =0.47;
+var BUZÓN = 	17.98;
+var BAJANTE_REFORZADA = 	15.84;
+var NACIMIENTO_2x3 = 	0.83;
+var BAJANTE_3x4 = 	6.69;
+var NACIMIENTO_3x4 = 	2.4;
+var CODO_3x4 = 	2.62;
+var FIJACIÓN_BAJANTE_3x4 = 	0.57;
+var BAJANTE_80 = 	6.4;
+var BAJANTE_100 = 	6.73;
+var CODO_100 = 	7;
+var FIJACIÓN_DE_CANAL =  	0.39;
+var SOPORTE_DE_TEJA_MIXTO = 0.97;
+var SOPORTE_DE_TEJA_URALITA = 0.99;
+var SOPORTE_ESTRIADO = 0.9;
+var TACO_GOLPE_6x70 = 	0.65;
+var TACO_GOLPE_6x60 = 	0.6;
+var TACO_GOLPE_6x40 = 	0.03;
+var TACO_GOLPE_6x30 = 	0.025;
+var REJILLA = 	5.38;
+var PINCHO_ANTIPÁJARO = 	3.45;
+var SEPARADOR_CORREDERO_200_8 = 	1.03;
+var SEPARADOR_CORREDERO_300_8 = 	1.07;
+var SEPARADOR_7_40 = 	0.86;
+var SEPARADOR_7_60 = 	0.93;
+var DISCO_CORTE_1_0 = 	0.95;
+var DISCO_CORTE_1_6 = 	1.15;
+var POLIURETANO = 	7.86;
+var TACO_QUÍMICO = 	9.43;
+var REMACHES_4 = 	0.018;
+var REMACHES_3_5 = 	0.02;
+var AUTORROSCANTE_4_8x13 = 	0.03;
+var AUTORROSCANTE_5_5x22 = 	0.055;
+var AUTORROSCANTE_5_5x50 = 	0.1;
+var AUTORROSCANTE_5_5x63 = 	0.14;
+var AUTORROSCANTE_5_5x115 = 	0.18;
+var BOBINA_600 = 	11.05;
+var CANALETA_40x60 = 	7.14;
+
 function calcular() {
     // Obtener los valores de los campos de entrada
     var entry_tapas = parseFloat(document.getElementById("tapas").value);
@@ -11,62 +60,32 @@ function calcular() {
     if (isNaN(entry_tapas) || isNaN(entry_fig_canal) || isNaN(entry_m_bajante) || isNaN (entry_n_fig_bajante) || isNaN(entry_m_canal) || isNaN(entry_nacimientos)) {
         alert("Por favor, ingrese números válidos");
         return;
-    }
-
-    // PRECIOS
-
-    var BOBINA = 4.3;
-    var TAPAS = 	0.63;
-    var BAJANTE_2x3 = 	4.09;
-    var CODO	 = 1.83;
-    var INGLETE	 = 2.14;
-    var FALSO_INGLETE = 	2.34;
-    var DESVIACIÓN_FRONTAL_2x3 = 2.69;
-    var DESVIACIÓN_LATERAL_2x3 = 3.83;
-    var FIJACIÓN_DE_BAJANTE_2x3 =0.47;
-    var BUZÓN = 	17.98;
-    var BAJANTE_REFORZADA = 	15.84;
-    var NACIMIENTO_2x3 = 	0.83;
-    var BAJANTE_3x4 = 	6.69;
-    var NACIMIENTO_3x4 = 	2.4;
-    var CODO_3x4 = 	2.62;
-    var FIJACIÓN_BAJANTE_3x4 = 	0.57;
-    var BAJANTE_80 = 	6.4;
-    var BAJANTE_100 = 	6.73;
-    var CODO_100 = 	7;
-    var FIJACIÓN_DE_CANAL =  	0.39;
-    var SOPORTE_DE_TEJA_MIXTO = 	0.97;
-    var SOPORTE_DE_TEJA_URALITA = 	0.99;
-    var SOPORTE_EXTRIADO = 	0.9;
-    var TACO_GOLPE_6x70 = 	0.65;
-    var TACO_GOLPE_6x60 = 	0.6;
-    var TACO_GOLPE_6x40 = 	0.03;
-    var TACO_GOLPE_6x30 = 	0.025;
-    var REJILLA = 	5.38;
-    var PINCHO_ANTIPÁJARO = 	3.45;
-    var SEPARADOR_CORREDERO_200_8 = 	1.03;
-    var SEPARADOR_CORREDERO_300_8 = 	1.07;
-    var SEPARADOR_7_40 = 	0.86;
-    var SEPARADOR_7_60 = 	0.93;
-    var DISCO_CORTE_1_0 = 	0.95;
-    var DISCO_CORTE_1_6 = 	1.15;
-    var POLIURETANO = 	7.86;
-    var TACO_QUÍMICO = 	9.43;
-    var REMACHES_4 = 	0.018;
-    var REMACHES_3_5 = 	0.02;
-    var AUTORROSCANTE_4_8x13 = 	0.03;
-    var AUTORROSCANTE_5_5x22 = 	0.055;
-    var AUTORROSCANTE_5_5x50 = 	0.1;
-    var AUTORROSCANTE_5_5x63 = 	0.14;
-    var AUTORROSCANTE_5_5x115 = 	0.18;
-    var BOBINA_600 = 	11.05;
-    var CANALETA_40x60 = 	7.14;
-
-    
+    }    
     //CALCULAR LOS COSTES DE CADA CONCEPTO
 
      var canal_metros_calc = entry_m_canal*BOBINA;
-     var soporte_teja_mixto_calc = (entry_m_canal/0.7)*SOPORTE_DE_TEJA_MIXTO;
+        //CALCULO PARA SOPORTE DEPENDIENDO DE LA OPCIÓN SELECCIONADA
+     var tipo_soporte = document.getElementById('soporte');
+     var soporte_seleccionado = tipo_soporte.value;
+     var soporte_teja_calc=0;
+     switch(soporte_seleccionado){
+        case "soporte_teja_mixto":
+            soporte_teja_calc = (entry_m_canal/0.7)*SOPORTE_DE_TEJA_MIXTO;
+            soporte_seleccionado = "SOPORTE TEJA MIXTO";
+            break;
+        case "soporte_teja_uralita":
+            soporte_teja_calc = (entry_m_canal/0.7)*SOPORTE_DE_TEJA_URALITA;
+            soporte_seleccionado = "SOPORTE TEJA URALITA";
+            break;
+        case "soporte_estriado":
+            soporte_teja_calc = (entry_m_canal/0.7)*SOPORTE_ESTRIADO;
+            soporte_seleccionado = "SOPORTE TEJA ESTRIADO";
+            break;
+        }
+        console.log(soporte_teja_calc);
+
+
+
      var tapas_calc = entry_tapas*TAPAS;
      var figuras_canal_calc =entry_fig_canal*INGLETE;
      var bajante_calc = entry_m_bajante*BAJANTE_2x3;
@@ -79,7 +98,7 @@ function calcular() {
 
 
     // CALCULAR LA SUMA DEL TOTAL DE CONCEPTOS
-    var suma = canal_metros_calc+soporte_teja_mixto_calc+tapas_calc+figuras_canal_calc+bajante_calc+fijacion_canal_calc+figuras_bajante_calc+poliuretano_calc+nacimientos_calc+remaches_calc+tacos_golpe;
+    var suma = canal_metros_calc+soporte_teja_calc+tapas_calc+figuras_canal_calc+bajante_calc+fijacion_canal_calc+figuras_bajante_calc+poliuretano_calc+nacimientos_calc+remaches_calc+tacos_golpe;
 
       // Mostrar los resultados
     var resultadosElement = document.querySelector(".resultados");
@@ -88,10 +107,11 @@ function calcular() {
     // Desplazar la página hacia los resultados
     resultadosElement.scrollTo({ top: resultadosElement.offsetTop, behavior: 'smooth' });
      
-     
+   //MOSTRAMOS RESULTADOS  
 
     document.getElementById("show_precio_m_canal").textContent = canal_metros_calc.toFixed(2);
-    document.getElementById("show_soporte_teja_mixta").textContent = soporte_teja_mixto_calc.toFixed(2);
+    document.getElementById("show_soporte_teja").textContent = soporte_teja_calc.toFixed(2);
+    document.getElementById("show_type_soporte_teja").textContent = soporte_seleccionado;
     document.getElementById("show_tapas").textContent = tapas_calc.toFixed(2);
     document.getElementById("show_figuras_canal").textContent = figuras_canal_calc.toFixed(2);
     document.getElementById("show_bajante").textContent = bajante_calc.toFixed(2);
@@ -103,8 +123,5 @@ function calcular() {
     document.getElementById("show_tacos_golpe").textContent = tacos_golpe.toFixed(2);
     //COSTE TOTAL
     document.getElementById("resultado").textContent = suma.toFixed(2);
-
-
-
 
 }

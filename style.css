@@ -32,6 +32,17 @@ input {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave */
     text-align: center;
 }
+select{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border:1px solid #ccc;
+    border-radius: 5px; /* Añade esquinas redondeadas */
+    font-size: 16px; /* Ajusta el tamaño de fuente */
+    margin-bottom: 10px; /* Añade espacio entre los campos de entrada */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave */
+    text-align: center;
+}
 /* Estilo para el botón */
 button {
     padding: 10px 20px; /* Añade espaciado interno al botón para que tenga un tamaño adecuado */
