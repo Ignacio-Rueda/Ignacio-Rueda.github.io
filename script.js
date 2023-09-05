@@ -89,16 +89,16 @@ function calcular() {
 
 
 
-     var tapas_calc = entry_tapas*TAPAS;
-     var figuras_canal_calc =entry_fig_canal*INGLETE;
-     var bajante_calc = entry_m_bajante*BAJANTE_2x3;
-     var fijacion_bajante_calc = (entry_m_bajante/1.5)*FIJACIÓN_DE_BAJANTE_2x3;
-     var fijacion_canal_calc = (entry_m_canal/0.7)*FIJACIÓN_DE_CANAL;
-     var figuras_bajante_calc= entry_n_fig_bajante*CODO_3x4;
-     var poliuretano_calc=((0.15*entry_tapas)+(0.5*entry_fig_canal)+(0.1*entry_nacimientos))*POLIURETANO;
-     var nacimientos_calc = entry_nacimientos*NACIMIENTO_2x3;
-     var remaches_calc = ((12*entry_fig_canal)+((entry_m_bajante/3)*3))*REMACHES_3_5;
-     var tacos_golpe=((entry_m_bajante/1.5)*2)*TACO_GOLPE_6x30;
+    tapas_calc = entry_tapas*TAPAS;
+    figuras_canal_calc =entry_fig_canal*INGLETE;
+    bajante_calc = entry_m_bajante*BAJANTE_2x3;
+    fijacion_bajante_calc = (entry_m_bajante/1.5)*FIJACIÓN_DE_BAJANTE_2x3;
+    fijacion_canal_calc = (entry_m_canal/0.7)*FIJACIÓN_DE_CANAL;
+    figuras_bajante_calc= entry_n_fig_bajante*CODO_3x4;
+    poliuretano_calc=((0.15*entry_tapas)+(0.5*entry_fig_canal)+(0.1*entry_nacimientos))*POLIURETANO;
+    nacimientos_calc = entry_nacimientos*NACIMIENTO_2x3;
+    remaches_calc = ((12*entry_fig_canal)+((entry_m_bajante/3)*3))*REMACHES_3_5;
+    tacos_golpe=((entry_m_bajante/1.5)*2)*TACO_GOLPE_6x30;
 
     
 
@@ -133,14 +133,28 @@ function calcular() {
     document.getElementById("show_tacos_golpe").textContent = tacos_golpe.toFixed(2);
     //COSTE TOTAL
     document.getElementById("resultado").textContent = suma.toFixed(2);
+
 }
 
-function imprimir(){
+function imprimir(){/*
     var doc = new jsPDF();
     doc.text(20, 20, "Nombre cliente " + nombre_cliente);
     doc.text(20, 30, "Dirección cliente " + direccion);
     doc.text(20, 40, "Teléfono " + tfno);
+    doc.text(20, 50, "Metros canal " + soporte_teja_calc.toFixed(2)+' €');
     doc.text(20, 50, "Metros canal " + canal_metros_calc.toFixed(2)+' €');
+    doc.text(20, 50, "Metros canal " + canal_metros_calc.toFixed(2)+' €');
+    doc.text(20, 50, "Metros canal " + canal_metros_calc.toFixed(2)+' €');
+    doc.text(20, 50, "Metros canal " + canal_metros_calc.toFixed(2)+' €');
+    doc.text(20, 50, "Metros canal " + canal_metros_calc.toFixed(2)+' €');
+    doc.text(20, 50, "Metros canal " + canal_metros_calc.toFixed(2)+' €');
+    doc.text(20, 50, "Metros canal " + canal_metros_calc.toFixed(2)+' €');
+    doc.text(20, 50, "Metros canal " + canal_metros_calc.toFixed(2)+' €');
+
+/*hay que meter todas la variables para imprimi OJO NO PUEDE SER VAR!*/
+
+
+    //COSTE TOTAL*/
     
     
     // Add new page/

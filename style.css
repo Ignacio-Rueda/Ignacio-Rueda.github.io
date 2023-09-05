@@ -26,6 +26,7 @@ label {
     margin-bottom: 5px; /* Añade espacio entre las etiquetas */
     font-weight: bold; /* Hace que el texto de la etiqueta sea negrita */
     color: #333; /* Define un color de texto */
+    text-align: center;
 }
 
 /* Estilo para los campos de entrada (inputs) */
